@@ -1,0 +1,84 @@
+/*
+Theme Name: Festival
+Theme URI: http://example.com/
+Description: Thème enfant du thème Twenty Twelve
+Author: Amri
+Author URI: http://example.com/about/
+Template: twentytwelve
+Version: 0.1.0
+*/
+@import url("../twentytwelve/style.css");
+
+  body{
+	background-color: #ff0000 ;
+	text-align: justify;
+  }
+/*la page*/
+ #page.hfeed.site{
+  border:1px solid;
+  border-radius: 15px 15px 15px 15px;
+  }
+/*menu*/
+ .font-rouge{color: #ff0000 !important; margin-left:20px;}
+ .fg-rouge a {color: #ff0000 !important; margin-left:20px;}
+ .fg-Orange a {color: #FFA500 !important; margin-left:20px;}
+ .fg-Jaune a {color: #FFD131 !important; margin-left:20px; }
+ .fg-Vert  a {color: #008000 !important; margin-left:20px;}
+ .fg-Turquoise a {color: #FFC0CB !important; margin-left:20px;}
+ .fg-Bleu a {color: #0000FF !important; margin-left:20px;}
+
+ #menu-menu.nav-menu{
+  background-color:#424040; 
+  padding-left: 20px; 
+  border-radius: 20px 20px 20px 20px; 
+ }
+
+.main-navigation a:hover {
+	-moz-transform:scale(2);
+       -webkit-transform:scale(1.5);
+	
+}
+
+li.current-menu-item a{
+	padding-left:20px;
+        padding-right:20px;
+	background-color:#ebe6e6; 
+        border-radius: 10px 10px 10px 10px;
+}
+
+/*menu slideshow*/
+.nivo-controlNav{
+   background-color:#ebe6e6;  
+   margin-left:220px;
+   
+   border-radius: 10px 10px 10px 10px; 
+   
+}
+
+
+/*agenda*/
+ #programme{
+  background-color:#ebe6e6;  
+  font-size : 0.9em !important;
+  padding: 10px 10px;
+  border-radius: 20px 20px 20px 20px;
+  
+ }
+/*Champs personnalisables */
+.champs-persos{
+   background-color:#ebe6e6;
+   border-radius: 10px 10px 10px 10px; 
+   padding: 10px 10px;
+  
+}
+
+.champs-persos i{  
+ color: #0000FF;
+}
+
+
+entry-title{
+
+}
+
+ 

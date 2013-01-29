@@ -1,0 +1,505 @@
+/*
+Theme Name: CalominoMagazine
+Theme URI: http://www.simplewpthemes.com
+Version: 1.0
+Author: sin2384
+Author URI: http://www.simplewpthemes.com
+Description: Free Wordpress theme by <a href="http://www.simplewpthemes.com/">SimpleWPThemes.com</a>. Please read READ ME.TXT for usage instructions!
+*/
+@import url("css/comments.css");
+@import url("css/reset.css");
+@import url("css/slide.css");
+@import url("css/featuredcats.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+/***************LINKS*************************/
+
+a:link, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffb50b;
+}
+/***************END LINKS*************************/
+
+html body {
+  background: #fff;
+  font-size: 12px;
+  font-family: Arial, Verdana, Tahoma, Times New Roman;
+  line-height: 1.5em;
+  color: #a5a4a4;
+}
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('fonts/DroidSans-webfont.eot');
+    src: url('fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidSans-webfont.woff') format('woff'),
+         url('fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'DroidSansRegular';
+  font-weight: normal;
+}
+
+/***************LAYOUT*************************/
+
+#topwrap {
+  width: 100%;
+  height: 500px;
+  background: url(images/bg.gif) repeat-x scroll top;
+}
+#mainwrap {
+  margin: 41px auto 0;
+  width: 960px;
+}
+#header {
+  width: 960px;
+  height: 85px;
+  margin: 0 auto;
+}
+#blogtitle {
+  text-transform: uppercase;
+  float: left;
+  padding: 33px 0 0 30px;
+}
+/* -------- START PAGE MENU -------- */
+
+#tbg {
+  width: 960px;
+  height: 500px;
+  margin: 0 auto;
+  background: url(images/headerbg.gif) repeat-x;
+}
+#top {
+  width: 100%;
+  height: 73px;
+  background: #333437;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  position: absolute;
+  top: 35px;
+  left: 0;
+  clear: both;
+}
+#top ul.sf-menu {
+  float: right;
+  padding-top: 28px;
+}
+#top li {
+  float: left;
+}
+#top li a {
+  float: left;
+  display: block;
+  color: #a9a9a9;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-right: 44px;
+  font-family: 'DroidSansRegular';
+}
+#top li a:hover {
+  color: #fff;
+}
+#top li li {
+  display: none;
+}
+/* -------- END PAGE MENU -------- */
+
+#s {
+  width: 212px;
+  height: 15px;
+  padding: 10px 0 9px 5px;
+  margin-bottom: 5px;
+  color: #c2c1c1;
+  font-size: 11px;
+  border: 1px solid #c2c1c1;
+}
+*+html #s {
+  margin-top: -1px;
+}
+#contentwrap {
+  float: left;
+  width: 960px;
+}
+#contentwraps {
+  width: 640px;
+  float: left;
+}
+#sidebar {
+  float: right;
+  width: 270px;
+}
+#sidebar2 {
+  clear: both;
+  margin: 0 auto;
+  width: 966px;
+  padding-top: 55px;
+  background: url(images/sep.gif) repeat-x scroll 0 18px;
+  overflow: hidden;
+}
+#footer1 {
+  width: 390px;
+  float: left;
+  margin-right: 63px;
+}
+#footer2 {
+  width: 240px;
+  float: left;
+  margin-right: 0;
+}
+#footer3 {
+  width: 240px;
+  float: right;
+  margin-right: 0px;
+}
+#sidebar2 h3 {
+  color: #838489;
+  font-size: 16px;
+  padding-bottom: 25px;
+  margin-bottom: 0 !important;
+  font-weight: normal;
+}
+.widget {
+  clear: both;
+  margin: 0 0 40px 0;
+  overflow: hidden;
+}
+.widget a, .widget a:visited {
+  color: #000000;
+}
+.widget a:hover {
+  color: #ffb50b;
+  text-decoration: underline;
+}
+.widget ul li {
+  padding: 5px 0 5px 0;
+}
+#sidebar2 ul.children {
+  margin: 5px 0 -5px 0;
+}
+/* -------- ADVERT -------- */
+
+.add1 {
+  clear: both;
+  float: left;
+  margin: 0 0 10px 0px;
+  display: inline;
+}
+.add2 {
+  float: right;
+  margin: 0 0px 10px 0;
+  display: inline;
+}
+
+/* -------- END ADVERT -------- */
+
+.custom_images img {
+  margin: 0 5px 0 0px;
+  padding: 0;
+}
+#footer {
+  width: 960px;
+  clear: both;
+  padding: 20px 0 20px;
+  overflow: hidden;
+  background: url(images/sep.gif) repeat-x scroll top;
+}
+#footer a, #footer a:visited {
+  color: #000;
+}
+#footer a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+/* -------- END WP LAYOUT -------- */
+
+/* -------- START WP STYLES -------- */
+
+#sidebar h3 {
+  padding: 0 0 25px 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #000;
+}
+.side-widget {
+  clear: both;
+  width: 270px;
+  padding: 0px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+#sidebar ul {
+  margin-top: -5px;
+}
+#sidebar ul.children {
+  margin: 6px 0 -6px 0;
+}
+#sidebar ul li {
+  padding: 6px 0 6px 0;
+  margin-left: 0;
+  border-bottom: 1px solid #ccc;
+}
+#sidebar li li {
+  border-bottom: 0;
+  border-top: 1px solid #ccc;
+}
+.side-widget a, .side-widget a:visited {
+  color: #878684;
+}
+.side-widget a:hover {
+  color: #000;
+}
+/***************POST STYLES*************************/
+h2.title {
+  margin: 0 0 17px 0;
+  line-height: 18px;
+  font-size: 14px;
+}
+h2.titles {
+  font-size: 22px;
+  line-height: 25px;
+  margin-bottom: 24px;
+}
+h2.title a, h2.title a:visited, h2.titles a, h2.titles a:visited {
+  color: #000;
+}
+.meta {
+  font-family: 'DroidSansRegular';
+  position: relative;
+}
+.date {
+  position: absolute;
+  left: 6px;
+  top: 151px;
+  display: block;
+  background: #747474;
+  color: #fff;
+  height: 25px;
+  padding-top: 5px;
+  width: 203px;
+  border-right: 5px solid #ffb50b;
+  text-align: center;
+}
+.comm {
+ background: url(images/com.png) no-repeat;
+ width: 89px;
+ height: 30px;
+ text-align: center;
+ padding-top: 4px;
+ display: inline-block;
+ margin-bottom: -34px;
+ position: absolute;
+ top: 41px;
+ left: -10px;
+ z-index: 9999;
+}
+a.comm, a.comm:visited {
+  color: #fff;
+  text-shadow: 1px 0 1px #b07d08;
+  font-size: 11px;
+}
+.postmetadata {
+  margin-top: 15px;
+}
+.leftpost {
+  float: left;
+  width: 220px;
+  margin-right: 26.6px;
+}
+.rightpost {
+  float: right;
+  width: 220px;
+}
+.clearp {
+  clear: both;
+  height: 5px;
+  margin-bottom: 25px;
+  background: url(images/sep.gif) repeat-x scroll bottom;
+}
+.lastc {
+  margin-bottom: 0 !important;
+}
+.post, .page {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.entry {
+  margin-top: 10px;
+  line-height: 20px;
+}
+.entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
+  margin-top: 15px;
+}
+.entry h2 {
+  margin-bottom: 0.4em;
+}
+.entry p {
+  margin-top: 10px;
+}
+.entry img, .post_thumbnail {
+  padding: 5px;
+  border: 1px solid #d5d5d5;
+  background: #fff;
+}
+.post_thumbnail {
+  margin: 0 0 17px !important;
+}
+.entry th {
+  padding: 0;
+  margin-right: 2px;
+}
+.entry li {
+  list-style: circle inside;
+}
+.entry ol li {
+  list-style: decimal inside;
+}
+blockquote {
+  border-left: 10px solid #666666;
+  margin-left: 20px;
+}
+blockquote p {
+  padding: 10px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 10px 0px 0px;
+}
+.alignright {
+  float: right;
+  margin: 5px 0px 0px 10px;
+}
+img.aligncenter {
+  display: block;
+  margin: 0 auto 5px;
+}
+/***************END POST STYLES*************************/
+#wp-calendar caption {
+  background: #000;
+  color: #fff;
+  margin-bottom: 10px;
+}
+#wp-calendar th {
+font-style: normal;
+text-transform: capitalize;
+}
+#wp-calendar th {
+font-style: normal;
+text-transform: capitalize;
+}
+#wp-calendar td {
+letter-spacing: normal;
+padding: 2px 0;
+text-align: center;
+}
+#wp-calendar {
+empty-cells: show;
+font-size: 14px;
+margin: 0;
+width: 90%;
+}
+#wp-calendar a:hover {
+  background: #000;
+  color: #fff;
+}
+#wp-calendar td:hover, #wp-calendar #today {
+  background: #000;
+  color: #fff;
+}
+li.pagenav, li.categories, li.linkcat {
+  list-style:none;
+}
+h2.pagetitle {
+  margin: 45px 0 50px 0px;
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+}
+p.center {
+  margin: 10px 0;
+}
+/* -------- END WP STYLES -------- */
+
+
+
+/* -------- TABLES -------- */
+#contentwrap table{font-size:1.2em;margin:5px 0 25px 1px;}
+#contentwrap table td{padding:8px;border: 1px solid #ccc;}
+/* -------- END TABLES -------- */
+
+
+/* -------- PAGE NAVIGATION -------- */
+
+.wp-pagenavi{
+  font-family: 'DroidSansRegular';
+  clear:both;
+  margin:0px 0 20px;
+  text-align:center;
+  border-top: 5px solid #000000;
+  padding-top: 6px;
+}
+*+html .wp-pagenavi {
+  padding: 5px 0 7px;
+  overflow: hidden;
+}
+.wp-pagenavi span.pages,.wp-pagenavi span.extend, .wp-pagenavi a:hover{
+  background:#ffb50b !important;
+  border-right:1px solid #000000 !important;
+  color:#fff;
+  margin:0px;
+  padding:8px 7px;
+}
+.wp-pagenavi a,.wp-pagenavi a:link,.wp-pagenavi a:visited{
+  background:#595a61;
+  border-right:1px solid #000000;
+  color:#fff;
+  margin:0px;
+  padding:8px 7px;
+  text-decoration:none;
+}
+.wp-pagenavi span.current {
+  background:#595a61;
+  border-right:1px solid #000000;
+  color:#fff;
+  margin:0px;
+  padding:8px 7px;
+}
+/* -------- END PAGE NAVIGATION -------- */
+
+input#subbox {
+  width: 383px;
+  height: 35px;
+  height: 24px\0/;
+  padding: 0px 0 0px 5px;
+  padding: 9px 0 0px 5px\0/;
+  font-size: 12px;
+  color: #cccccc;
+  border: 1px solid #d4d4d4;
+}
+*+html input#subbox {
+  height: 25px;
+  padding-top: 9px;
+}
+:root input#subbox {height: 17px\0/IE9; }  /* IE9 */
+:root input#subbox {padding-bottom: 8px\0/IE9; }  /* IE9 */
+#swrap {
+  width: 280px;
+}
+#subm {
+  position: relative;
+  top: -36px;
+  left: 291px;
+}
+*+html #subm {
+  top: -36px;
+}
+#signup {
+  margin: 6px 0 30px;
+}
